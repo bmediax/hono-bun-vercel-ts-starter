@@ -3,10 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "bun --hot src/app.ts",
-    "start": "bun ./index.ts",
-    "build": "tsc",
-    "serve": "ts-node -r tsconfig-paths/register src/app.ts",
+    "dev": "bun run --hot src/app.ts",
     "vercel-build": "echo hello world",
     "update": "bun x npm-check-updates --interactive --format group"
   },
@@ -14,10 +11,12 @@
     "@types/bun": "^1.1.6",
     "bun": "^1.1.20",
     "hono": "^4.4.13",
+    "module-alias": "^2.2.3",
     "tsc-alias": "^1.8.10",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.5.3",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "tsx": "^3.12.2"
   },
   "devDependencies": {
     "vercel": "^32.4.1"

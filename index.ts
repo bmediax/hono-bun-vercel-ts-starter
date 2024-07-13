@@ -1,3 +1,5 @@
+import "./paths";
+
 import app from "./src/app";
 
 const server = Bun.serve({

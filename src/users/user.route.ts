@@ -1,5 +1,4 @@
 import { Hono } from "hono";
-
 const Users = new Hono();
 
 Users.get("/", (c) => {
