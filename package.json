@@ -4,17 +4,15 @@
   "type": "module",
   "scripts": {
     "dev": "bun --hot src/app.ts",
-
-    "build": "tsc",
     "start": "bun ./index.ts",
-    
+    "build": "tsc",
     "serve": "ts-node -r tsconfig-paths/register src/app.ts",
     "vercel-build": "echo hello world",
     "update": "bun x npm-check-updates --interactive --format group"
   },
   "dependencies": {
     "@types/bun": "^1.1.6",
-    "bun": "^1.1.19",
+    "bun": "^1.1.20",
     "hono": "^4.4.13",
     "tsc-alias": "^1.8.10",
     "tsconfig-paths": "^4.2.0",
