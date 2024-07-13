@@ -1,16 +1,30 @@
 {
   "name": "new-tix",
+  "module": "index.ts",
+  "type": "module",
   "scripts": {
-    "start": "vercel dev",
-    "deploy": "vercel"
+    "dev": "bun --hot src/app.ts",
+
+    "build": "tsc",
+    "start": "bun ./index.ts",
+    
+    "serve": "ts-node -r tsconfig-paths/register src/app.ts",
+    "vercel-build": "echo hello world",
+    "update": "bun x npm-check-updates --interactive --format group"
   },
   "dependencies": {
+    "@types/bun": "^1.1.6",
     "bun": "^1.1.19",
     "hono": "^4.4.13",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.5.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {
     "vercel": "^32.4.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
   }
 }
